@@ -2,7 +2,7 @@
 
 ### All questions which require me to write code or build a function will be done in a separate class and will be called in main for that lesson.
 
-**<ins> Question 1:</ins>**
+**<ins> Question 1:</ins>**\
 Method called in Main
 
 **<ins> Question 2:</ins>**
@@ -55,5 +55,5 @@ The output would be 7, as 'y' is being cast to an int, which means that it will 
 anything after the decimal. This will **NOT** round the number, so if you were to cast 2.8 to
 an int, the result would still be 2 and not 3.
 
-**<ins> Question 6:</ins>**
+**<ins> Question 6:</ins>**\
 Method called in Main
