@@ -54,3 +54,6 @@ print(x+int(y))
 The output would be 7, as 'y' is being cast to an int, which means that it will drop
 anything after the decimal. This will **NOT** round the number, so if you were to cast 2.8 to
 an int, the result would still be 2 and not 3.
+
+**<ins> Question 6:</ins>**
+Method called in Main
