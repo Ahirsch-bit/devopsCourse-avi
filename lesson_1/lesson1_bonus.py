@@ -50,7 +50,7 @@ def question5(a, b):
     smallest = a
     if b < a and b < c:
         smallest = b
-    elif c < b:
+    elif c < b and c < a:
         smallest = c
     print(f"The smallest number out of the 3 is {smallest}.")
     print("Another way of finding the smallest number is to put them in a list and sort them.")
