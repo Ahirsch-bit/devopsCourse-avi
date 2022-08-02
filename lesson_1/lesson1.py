@@ -25,6 +25,7 @@ def exercise_4():
     print(f'using f and {{variable}}: result is:   {my_number}')
     print(f'using casting: result is:  ' + str(my_number))
 
+
 # 6. Fix the following code, without changing a or b
 # a = 8
 # b = "123"
@@ -33,7 +34,7 @@ def exercise_4():
 def exercise_6():
     a = 8
     b = "123"
-    #if we want to print as a string
-    print(str(a)+b)
-    #if we want to add both numbers together
-    print(a+int(b))
+    # if we want to print as a string
+    print(str(a) + b)
+    # if we want to add both numbers together
+    print(a + int(b))
