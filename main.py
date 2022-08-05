@@ -13,6 +13,10 @@ from lesson_1.lesson1_bonus import question1, question2, question3, question4, q
 # question3(a, b)
 # question4(a, b)
 # question5(a, b)
+from lesson_2.number_names import number_converter
 from lesson_2.seven_boom import seven_boom
 
-seven_boom()
+#seven_boom()
+
+x = int(input("Enter a number."))
+number_converter(x)
