@@ -1,3 +1,4 @@
+from selenium.webdriver.common.by import By
 from seleniumpagefactory import PageFactory
 
 
@@ -13,6 +14,8 @@ class GoogleTranslate(PageFactory):
     }
 
     def translate_text(self, text):
+
         self.textBox.clear_text()
         self.textBox.set_text(text)
         return self.result.get_text()
+
