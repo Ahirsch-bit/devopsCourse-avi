@@ -40,7 +40,12 @@ pipeline {
         }
         stage('Question 7'){
             steps{
+            try{
                 bat 'pip install -r requirements.txt'
+                }catch(e){
+                echo 'continue'
+                }
+
                 bat 'python lesson_4/tests.py'
             }
 
