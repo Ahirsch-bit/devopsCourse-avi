@@ -1,0 +1,49 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Question 1') {
+            steps {
+                script{
+                def name = "Avi Hirsch"
+                def path = System.getProperty("user.home")+"/Desktop/lesson4demo.txt"
+                writeFile file: path, text: name
+
+            }
+        }
+    }
+        stage('Question 2'){
+            steps {
+                script {
+                    def file = readFile file: System.getProperty("user.home")+'/Desktop/lesson4demo.txt'
+                    echo file
+                }
+            }
+        }
+        stage('Question 3'){
+            steps {
+                script{
+                    def volume = powershell(returnStdout: true, script: 'Get-Volume')
+                    echo volume
+                }
+            }
+        }
+        stage('Question 4'){
+            steps {
+                 script {
+                    def file = readFile file: System.getProperty("user.home")+'/Desktop/lesson4demo.txt'
+                    def path = System.getProperty("user.home")+"/Desktop/secondfolder/lesson4demo.txt"
+                    writeFile file: path, text: file
+                    bat 'del '+System.getProperty("user.home")+'\\Desktop\\lesson4demo.txt'
+                }
+            }
+        }
+        stage('Question 7'){
+            steps{
+                bat 'pip install -r requirements.txt'
+                bat 'python lesson_4/tests.py'
+            }
+
+        }
+}
+}
