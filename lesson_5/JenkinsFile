@@ -46,7 +46,6 @@ pipeline {
              }catch(e){
                 echo 'continue'
                 }
-
                 bat 'python lesson_4/tests.py'
             }
         }

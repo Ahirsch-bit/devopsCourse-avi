@@ -1,13 +1,13 @@
 import time
 
 from selenium import webdriver
-from selenium.webdriver import Keys, FirefoxProfile
+from selenium.webdriver import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-from lesson_4.page_objects.google_translate import GoogleTranslate
-from lesson_4.page_objects.youtube import YouTube
-from lesson_4.utils.selenium_startup import DriverTool
+from page_objects.google_translate import GoogleTranslate
+from page_objects.youtube import YouTube
+from utils.selenium_startup import DriverTool
 
 driver = DriverTool()
 driver_chrome = driver.startup('chrome')
