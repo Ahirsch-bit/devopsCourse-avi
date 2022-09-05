@@ -12,3 +12,7 @@ for a scheduled build every day at 8am GMT +2.
 
 ![screenshot](jenkins schedule.PNG?raw=true "Title")
 
+For the challenge, this is the screenshot that shows how to trigger a build based on another 
+build:
+
+![screenshot](jenkins build trigger.PNG?raw=true "Title")
